@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./contact-me.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Contact With Us</h1>
+      <form id="contact-form" action="">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            class="form-control validate-input"
+            type="text"
+            name="name"
+            required
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            class="form-control validate-input"
+            type="email"
+            name="email"
+            required
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="form-group">
+          <label for="kind">What can we help with?</label>
+          <select class="form-control" name="kind" id="contact-kind" required>
+            <option value="" selected="selected" disabled>Choose one</option>
+            <option value="business">Job opportunity</option>
+            <option value="technical">Talk code</option>
+          </select>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div id="job" class="hidden">
+          <div class="form-group">
+            <label for="job-title"> Job title </label>
+            <input
+              id="job-title"
+              class="form-control validate-input"
+              type="text"
+              name="job-title"
+            />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="form-group">
+            <label for="company-website ">Company website</label>
+            <input
+              id="company-website"
+              class="form-control validate-input"
+              type="url"
+            />
+            <small class="error" aria-live="polite"></small>
+          </div>
+        </div>
+        <div id="code" class="form-group hidden">
+          <label for="kind">Coding language</label>
+          <select class="form-control" name="kind" id="coding-language">
+            <option value="choose" selected="selected" disabled>
+              Choose one
+            </option>
+            <option value="c#">cSharp</option>
+            <option value="javaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Java">HTML</option>
+            <option value="Java">CSS</option>
+          </select>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="3"
+            required
+          ></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Sign up" />
+        </div>
+      </form>
+    </div>
+
+    <script src="./contact-me.js"></script>
+  </body>
+</html>

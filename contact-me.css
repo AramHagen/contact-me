@@ -1,0 +1,17 @@
+.invalid {
+  border: 1px solid red;
+  background-color: #ffdddd;
+}
+.error {
+  color: red;
+  padding-left: 10px;
+}
+/* input:invalid {
+  border: 1px solid red;
+}
+input:valid {
+  border: 1px solid green;
+} */
+.hidden {
+  display: none;
+}
